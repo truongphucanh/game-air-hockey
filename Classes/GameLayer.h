@@ -31,4 +31,8 @@ public:
     void addBall();
     void addScoreLabels();
     void addEventListener();
+    bool isGoal() const;
+    int whichCourt() const;
+    void resetGame();
+    void increaseScore(int whichplayer);
 };

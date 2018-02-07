@@ -153,8 +153,8 @@ void AppDelegate::preloadSounds()
 {
     const auto fileUtils = FileUtils::getInstance();
     auto audioEngine = SimpleAudioEngine::getInstance();
-    audioEngine->preloadEffect(fileUtils->fullPathForFilename("hit.wav").c_str());
-    audioEngine->preloadEffect(fileUtils->fullPathForFilename("score.wav").c_str());
+    audioEngine->preloadEffect("hit.wav");
+    audioEngine->preloadEffect("score.wav");
     audioEngine->setBackgroundMusicVolume(0.5f);
-    audioEngine->setEffectsVolume(0.5f);
+    audioEngine->setEffectsVolume(5.0f);
 }
